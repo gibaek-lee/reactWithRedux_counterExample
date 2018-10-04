@@ -9,6 +9,7 @@ Counter with color changing. Redux applied to React.
 ## Architecture(UML diagram like)
 <p align="center">
   <img width="80%" src="./image/reactWithRedux_ver0.2(combineReduce).png">
+  <br>mono-counter architecture. react-redux applied.
 </p>
 
 ## Reference
