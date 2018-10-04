@@ -5,8 +5,8 @@ import { getRandomColor } from '../utils'
 
 // state value of store is connected to props
 const mapStateToProps = (state) => ({
-  color: state.color,
-  number: state.number
+  color: state.colorData.color,
+  number: state.numberData.number
 });
 
 //dispatch(createdActionObj) is connected to props
