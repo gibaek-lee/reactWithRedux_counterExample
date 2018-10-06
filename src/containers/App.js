@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
-//import Counter from '../components/Counter';
-import CounterContainer from './CounterContainer';
+import CounterListContainer from './CounterListContainer';
+import Buttons from '../components/Buttons';
+import { getRandomColor } from '../utils';
+import * as actions from '../actions';
+import { connect } from 'react-redux';
 
 class App extends Component {
   render() {
+    const { onCreate, onRemove } = this.props; //아래 mapDispatchToProps에서 정의하고 export connect(mapProps)(App) 한것이 App의 props로 전달됨
     return (
-      <div>
+      <div className="App">
+        <Buttons
+          onCreate={onCreate}
+          onRemove={onRemove}
+        />
         {/*<Counter> //redux store 만들기 전*/}
-        <CounterContainer />
+        {/*<CounterContainer />*/}
+        <CounterListContainer />
       </div>
     );
   }
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+  onCreate: () => dispatch(actions.create(getRandomColor())),
+  onRemove: () => dispatch(actions.remove())
+});
+
+export default connect(null, mapDispatchToProps)(App)

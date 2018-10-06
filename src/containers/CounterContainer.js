@@ -1,7 +1,7 @@
 import Counter from '../components/Counter';
 import * as actions from '../actions';
+import { getRandomColor } from '../utils';
 import { connect } from 'react-redux';//connect는 container component를 store에 연결하기 위해 사용하는 함수
-import { getRandomColor } from '../utils'
 
 // state value of store is connected to props
 const mapStateToProps = (state) => ({

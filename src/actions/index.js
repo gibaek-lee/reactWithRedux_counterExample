@@ -5,15 +5,29 @@ Action creators에도 export를 붙여 component container에서 store에 dispat
 
 import * as types from './ActionTypes'
 
-export const increment = () => ({//단순히 1만 더하는거라서 type만 지정
-  type: types.INCREMENT
+export const create = (color) => ({
+  type: types.CREAT,
+  color: color
 });
 
-export const decrement = () => ({//단순히 1만 더하는거라서 type만 지정
-  type: types.DECREMENT
+export const remove = () => ({
+  type: types.REMOVE
 });
 
-export const setColor = (color) => ({
+/* 이하 action creator들의 index는 multi Counter program으로 확장할 때
+특정 Counter를 지정해서 action을 수행하도록 하기 위함 */
+export const increment = (index) => ({//단순히 1 더하는거라 number는 지정하지 않음
+  type: types.INCREMENT,
+  index: index
+});
+
+export const decrement = (index) => ({//단순히 1 빼는거라 number는 지정하지 않음
+  type: types.DECREMENT,
+  index: index
+});
+
+export const setColor = ({index, color}) => ({
   type: types.SET_COLOR,
+  index: index,
   color: color
 });
