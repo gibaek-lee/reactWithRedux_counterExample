@@ -1,3 +1,5 @@
+//mono counter에서만 쓰이는 component
+
 import Counter from '../components/Counter';
 import * as actions from '../actions';
 import { getRandomColor } from '../utils';
