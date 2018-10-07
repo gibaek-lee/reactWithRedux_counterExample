@@ -20,5 +20,5 @@ Counter with color changing. Redux applied to React.
 </p>
 
 ## Reference
-mono-counter structure: Redux tutorial - Velopert Blog [Redux 정복하기 1장](https://velopert.com/3346)
-multi-counter structure: Redux tutorial - Velopert Blog [Redux 정복하기 2장](https://velopert.com/3352)
+- mono-counter structure: Redux tutorial - Velopert Blog [Redux 정복하기 1장](https://velopert.com/3346)
+- multi-counter structure: Redux tutorial - Velopert Blog [Redux 정복하기 2장](https://velopert.com/3352)
