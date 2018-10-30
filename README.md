@@ -1,6 +1,8 @@
 # Redux practice(Color Changing Counter)
 Counter with color changing. Redux applied to React.
 
+![](./video/ReactAppCompressedGif.gif)
+
 ## Functions
 - 생성 button: Add one more counter at the end of the 'counter states management array'
 - 제거 button: Remove last counter of the 'counter states management array'
